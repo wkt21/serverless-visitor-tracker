@@ -1,0 +1,14 @@
+name = "serverless-visitor-tracker"
+main = "src/worker.js"
+compatibility_date = "2026-07-01"
+
+# Replace with your KV namespace IDs from:
+#   wrangler kv namespace create VISITORS
+#   wrangler kv namespace create VISITORS --preview
+[[kv_namespaces]]
+binding = "VISITORS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_KV_PREVIEW_ID"
+
+[vars]
+DEFAULT_ID = "wkt21"
